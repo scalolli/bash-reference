@@ -8,14 +8,14 @@
 
 `-L` is input one line as one argument
 
+```cat dois-to-check.txt | head | xargs -I '{}' -L1 echo basu '{}'.txt```
+`{}` is used to capture arguments, remember to use `-I '{}''` for this to work
+
 ### Running things in background and redirect to a file
 
 ```./check-file-exists.sh &> output.log &```
 
 `&>` output to file and `&` run in background
-
-```cat dois-to-check.txt | head | xargs -I '{}' -L1 echo basu '{}'.txt```
-`{}` is used to capture arguments, remember to use `-I '{}''` for this to work
 
 ### Screen
 
