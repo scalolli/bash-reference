@@ -36,4 +36,7 @@ screen -r pts-0.long-running-tasks
 
 `while read -r line; do COMMAND; done < input.file`
 
+### Docker Compose start bash
+
+`docker-compose run app bash`
 
