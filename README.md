@@ -40,3 +40,6 @@ screen -r pts-0.long-running-tasks
 
 `docker-compose run app bash`
 
+### JQ
+
+```curl "https://bhlah" | jq '.articles[].pageStart'```
