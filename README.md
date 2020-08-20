@@ -43,3 +43,9 @@ screen -r pts-0.long-running-tasks
 ### JQ
 
 ```curl "https://bhlah" | jq '.articles[].pageStart'```
+
+### AWK
+
+Split lines
+
+```cat foo.csv | grep Enabled | awk '{print $19}' | uniq```
