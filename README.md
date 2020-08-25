@@ -49,3 +49,7 @@ screen -r pts-0.long-running-tasks
 Split lines
 
 ```cat foo.csv | grep Enabled | awk '{print $19}' | uniq```
+
+### SED
+
+```awk '{print $9}' | sed 's/^/"/' | sed 's/$/",/'```
